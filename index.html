@@ -1,114 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GW3T6V17PR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GW3T6V17PR');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW3T6V17PR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GW3T6V17PR');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakub Polášek</title>
+    <title>Jakub Polášek | Software Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header class="header--content header--padding flex-container flex-container--column section-gap--quad">
-        <div class="flex-container flex-container--between section-gap--double">
-            <h1 class="flex-container flex-container--column header--h1-gap">
-                <span class="title--size-b title--heavy"> <span class="block-mobile">Jsem</span> Jakub</span>
-                <span class="title--size-s title--heavy h1__text-color"> <span class="block-mobile">IT a vývoj</span>  software</span>
-            </h1>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="hero">
+                <h1 class="hero__title">Jakub Polášek</h1>
+                <p class="hero__subtitle">Software Engineering & Development</p>
+            </div>
+
+            <nav class="nav">
+                <a class="nav__link" href="#o-mne">O mně</a>
+                <a class="nav__link" href="#zkusenosti">Pracovní zkušenosti</a>
+                <a class="nav__link" href="#projekty">Projekty & BP</a>
+                <a class="nav__link" href="#dovednosti">Předměty</a>
+                <a class="nav__link nav__link--cta" href="#kontakt">Kontakt</a>
+            </nav>
         </div>
-
-        <nav class="nav flex-container section-gap--normal flex-container--between grid-nav--2-cols">
-            <a class="nav--link padding--normal nav--background" href="#AboutMe">Něco málo o mně</a>
-            <a class="nav--link padding--normal nav--background" href="#proj">Projekty a bakalářská práce</a>
-            <a class="nav--link padding--normal nav--background" href="#predmety">Splněné předměty</a>
-            <a class="nav--link padding--normal nav--background" href="#kontakt">Kontakt</a>
-        </nav>
-       
     </header>
-    <main>
-        <section class="padding--normal">
-            <h2 id="AboutMe">Něco málo o mně</h2>
-            <p class="p--text-size">
-                Ahoj! Jmenuji se Jakub Polášek, je mi 22 let a pocházím z Hodonína.
-                Jsem studentem Univerzity Palackého na katedře informatiky. Aktuálně (2025) jsem v <br> 3. ročníku bakalářského studia v oboru informatika a specializace Programovaní a vývoj software.
-            </p>
-            <p class="p--text-size">
-                Ve svém volném čase se rád věnuji videohrám, matematice, šachům a samozřejmě programování a technologiím pro vývoj okenních aplikací a webových aplikací či vývoj webu.
-                Obecně mě hlavně baví vyvíjet okenní aplikace, které pracují s databází a nebo obecně něco, co sám využiji. Baví mě malé programy, které si sám napíšu nebo najdu jako API
-                módy nebo autoclicker do her.
-            </p>
 
-            <p class="p--text-size">
-                Nejraději dělám v C# WPF a MVC ASP projekty společně s PostgreSQL databází, ale co se týče technologií se rád naučím vše co mi pomůže a zlepší mé schopnosti.
-            </p>
+    <main class="container">
+        
+        <!-- O mně -->
+        <section id="o-mne" class="section">
+            <h2>O mně</h2>
+            <div class="about-content">
+                <p>
+                    Ahoj! Jsem studentem 3. ročníku informatiky na 
+                    <strong>Univerzitě Palackého v Olomouci</strong> se specializací na 
+                    <em>Programování a vývoj software</em>.
+                </p>
+                <p>
+                    Baví mě výzvy a poznávání nových technologií — rád píši praktické skripty, které usnadňují práci mě i mému týmu, a navrhuji komplexní aplikace zaměřené na funkčnost a architekturu.
+                </p>
+                <p>
+                    Mým cílem je vypracovat se na pozici **Senior Software Engineer / Tech Lead** a dlouhodobě stavět na moderních přístupech k vývoji software. Chci být dobrý v tomto oboru jak z pohledu zkušeností a vědomostí tak z používání moderních nástrojů pro maximální efektivitu.
+                </p>
+                
+                <div class="tech-stack">
+                    <span class="tag">C# / .NET</span>
+                    <span class="tag">ASP.NET Core</span>
+                    <span class="tag">PostgreSQL / FirebirdSQL</span>
+                    <span class="tag">Delphi</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">TypeScript / JavaScript</span>
+                    <span class="tag">AngularJS</span>
+                </div>
+            </div>
         </section>
 
-        <section class="padding--normal">
-            <h2 id="proj">Projekty a Bakalářská práce</h2>
-
-            <p class="p--text-size">Všechny ostatní projekty jako úkoly do předmětu Python mám na svém GitHubu</p>
-            <a class="nav--link padding--normal  no-left-margin  nav--github" href="https://github.com/Polly03/">odkaz na github</a>
-
-            <article class="padding--normal projects--background p--text-size margin--normal no-left-margin">
-                <h3>Bakalářská práce</h3>
-                <p>Má bakalářská práce bude okenní aplikace pro hraní šachů proti počítači a jiným hráčům, analýzy a ukládání svých vlastních her,
-                   ale hlavně samostudium a především výukových místností pro učitele a žáky, kde bude k dispozici všelijaké nástroje pro vysvětlení mechanik a strategií <br> <span style="color: red; font-size: larger;">ještě nezaložen</span>
-                </p>
-                <a class=" nav--link padding--normal  no-left-margin  nav--github" href="">odkaz na projekt</a>
-            </article>
-
-            <div class="grid--3-cols margin--normal  no-left-margin grid--1-cols-mobile">
-                  <article class="padding--normal projects--background p--text-size  no-left-margin">
-                    <h3>Šachová analýza</h3>
-                    <p>Okenní aplikace pro analýzu vlastních her. První neoptimalizovaná verze, ale pro naučení se stockfishem a splnění předmětu C# 2 více než dostačující</p>
-                    <a class="nav--link padding--normal no-left-margin nav--github" href="https://github.com/Polly03/C--project">odkaz na projekt</a>
+        <!-- Pracovní zkušenosti -->
+        <section id="zkusenosti" class="section">
+            <h2>Pracovní zkušenosti</h2>
+            
+            <div class="timeline">
+                <article class="card card--featured">
+                    <div class="card__header">
+                        <div>
+                            <h3>Programátor C# a Delphi</h3>
+                            <span class="card__company">Elektlabs</span>
+                        </div>
+                        <span class="badge">2025 – 2026</span>
+                    </div>
+                    <p>
+                        Vývoj ASP.NET webových aplikací propojených s databází FirebirdSQL — návrh nových funkcionalit, bugfixing a testování před nasazením.
+                    </p>
+                    <p>
+                        Z vlastní iniciativy jsem se přesunul také do Delphi oddělení, kde jsem se věnoval pokročilému low-level vývoji, multithreadingu a údržbě stávajících systémů.
+                    </p>
+                    <div class="card__footer">
+                        <span class="tag tag--sm">C#</span>
+                        <span class="tag tag--sm">ASP.NET</span>
+                        <span class="tag tag--sm">FirebirdSQL</span>
+                        <span class="tag tag--sm">Delphi</span>
+                        <span class="tag tag--sm">Multithreading</span>
+                    </div>
                 </article>
 
-                <article class="padding--normal projects--background p--text-size  no-left-margin">
-                    <h3>Útulek</h3>
-                    <p>malý projekt MVC aplikace taktéž pro předmět C# 2</p>
-                    <a class="nav--link padding--normal  no-left-margin nav--github" href="https://github.com/Polly03/MVC-Utulek-Aplikace">odkaz na projekt</a>
-                </article>
-
-                <article class="padding--normal projects--background p--text-size no-left-margin">
-                    <h3>Webový projekt</h3>
-                    <p>statický web vytvořen pro předmět WEB</p>
-                    <a class=" nav--link padding--normal no-left-margin nav--github" href="https://github.com/Polly03/Web-Proejct">odkaz na projekt</a>
+                <article class="card">
+                    <div class="card__header">
+                        <div>
+                            <h3>Pracovník úseku čerstvých potravin</h3>
+                            <span class="card__company">Albert (Zkrácený úvazek)</span>
+                        </div>
+                        <span class="badge badge--neutral">2022 – 2025</span>
+                    </div>
+                    <p>
+                        Dlouhodobá brigáda při studiu, která prověřila mou spolehlivost, důslednost, komunikaci a schopnost efektivně pracovat pod časovým tlakem. Získal jsem zde i nabídku na plný úvazek.
+                    </p>
                 </article>
             </div>
-          
-
         </section>
 
-        <section id="predmety" class="padding--normal">
-            <h2>Splněné předměty</h2>
-            <p class="p--text-size">užitečné předměty, které jsem splnil</p>
-            <ul class="p--text-size">
-                <li>C# 1 a C# 2</li>
-                <li>Python</li>
-                <li>databázové systémy</li>
-                <li>vývoj webu</li>
-                <li>uživatelské rozhraní</li>
+        <!-- Projekty -->
+        <section id="projekty" class="section">
+            <h2>Projekty & Bakalářská práce</h2>
+            <p class="section__desc">Kód k většině mých projektů najdeš na mém <a href="https://github.com/Polly03/" target="_blank" rel="noopener">GitHub profilu</a>.</p>
+
+            <!-- Bakalářka jako Hero karta -->
+            <article class="card card--featured">
+                <div class="card__header">
+                    <h3>Bakalářská práce: Výuková šachová aplikace</h3>
+                    <span class="badge badge--warning">Ve vývoji</span>
+                </div>
+                <p>
+                    Desktopová aplikace zaměřená na hraní šachů proti počítači i živým hráčům, ukládání a analýzu partií. Hlavním přínosem jsou interaktivní výukové místnosti pro učitele a žáky s nástroji pro vysvětlení šachových mechanik a strategií.
+                </p>
+                <div class="card__footer">
+                    <span class="tag tag--sm">C#</span>
+                    <span class="tag tag--sm">WPF</span>
+                    <span class="tag tag--sm">Stockfish API</span>
+                </div>
+            </article>
+
+            <!-- Grid projektů -->
+            <div class="projects-grid">
+                <article class="card">
+                    <h3>Šachová analýza</h3>
+                    <p>Desktopová aplikace pro analýzu vlastních šachových her za využití šachového motoru Stockfish. Vytvořeno jako zápočtový projekt pro předmět C# 2.</p>
+                    <a class="btn btn--outline" href="https://github.com/Polly03/C--project" target="_blank" rel="noopener">Zdrojový kód</a>
+                </article>
+
+                <article class="card">
+                    <h3>Správa útulku</h3>
+                    <p>Webová MVC aplikace v ASP.NET Core pro správu a evidenci zvířat v útulku, vytvořená v rámci předmětu C# 2.</p>
+                    <a class="btn btn--outline" href="https://github.com/Polly03/MVC-Utulek-Aplikace" target="_blank" rel="noopener">Zdrojový kód</a>
+                </article>
+
+                <article class="card">
+                    <h3>Webový projekt</h3>
+                    <p>Statická webová prezentace vytvořená pro předmět WEB ověřující základy semantického HTML a CSS stylů.</p>
+                    <a class="btn btn--outline" href="https://github.com/Polly03/Web-Proejct" target="_blank" rel="noopener">Zdrojový kód</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Předměty -->
+        <section id="dovednosti" class="section">
+            <h2>Absolvované klíčové předměty</h2>
+            <ul class="skills-list">
+                <li><strong>C# 1 & C# 2</strong> (Pokročilé OOP, GUI, Linq)</li>
+                <li><strong>Databázové systémy</strong> (SQL, Návrh relací, PostgreSQL)</li>
+                <li><strong>Vývoj webu & UI</strong> (HTML, CSS, User Experience)</li>
+                <li><strong>Python</strong> (Algoritmizace, skriptování)</li>
             </ul>
         </section>
 
-        <section id="kontakt" class="padding--normal">
+        <!-- Kontakt -->
+        <section id="kontakt" class="section section--contact">
             <h2>Kontakt</h2>
-            <p class="p--text-size">Email: jak.polasek@seznam.cz</p>
-            <p class="p--text-size">Telefon: 774 262 017</p>
+            <p>Máš zájem o spolupráci nebo se chceš na cokoliv zeptat? Ozvi se mi!</p>
+            <div class="contact-links">
+                <a href="mailto:jak.polasek@seznam.cz" class="contact-card">
+                    <span class="contact-card__label">Email</span>
+                    <span class="contact-card__val">jak.polasek@seznam.cz</span>
+                </a>
+                <a href="tel:+420774262017" class="contact-card">
+                    <span class="contact-card__label">Telefon</span>
+                    <span class="contact-card__val">+420 774 262 017</span>
+                </a>
+            </div>
         </section>
-    </main>
-    <footer>
 
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jakub Polášek | Vytvořeno s důrazem na čistý kód</p>
+        </div>
     </footer>
+
 </body>
 </html>
